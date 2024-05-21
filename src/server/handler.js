@@ -38,6 +38,8 @@ async function getPredictionHistoriesHandler(request, h) {
         historiesArr.push(doc.data());
     });
 
+
+    
     const response = h.response({
         status: 'success',
         data: historiesArr
